@@ -46,5 +46,11 @@ describe('short-id', () => {
     expect(decode2('1z', rule)).toBe(71)
     expect(encode2(72, rule)).toBe('20')
     expect(decode2('100', rule)).toBe(1296)
+
+    expect(encode2(54, '01z8ab')).toBe('180')
+    expect(encode2(59, '01z8ab')).toBe('18b')
+
+    expect(encode2(59)).toBe('X')
+    expect(decode2('X')).toBe(59)
   })
 })
