@@ -1,7 +1,7 @@
 # short-id
 
 A [Sumor Cloud](https://sumor.cloud) Tool.  
-[More Documentation](https://sumor.cloud)
+[More Documentation](https://sumor.cloud/short-id)
 
 This is a short-id library for Node.js and the browser.
 You can easily use it to generate a short id from number.
@@ -37,34 +37,35 @@ please change the following code in your `package.json` file:
 ## Usage
 
 #### Standard Usage
+
 ```js
-import { encode, decode } from '@sumor/short-id';
+import { encode, decode } from '@sumor/short-id'
 
 // by default using rule 0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ
-const shortId1 = encode(10);
-console.log(shortId1); // 'a'
+const shortId1 = encode(10)
+console.log(shortId1) // 'a'
 const shortId2 = encode(72)
-console.log(shortId2); // '1a'
+console.log(shortId2) // '1a'
 
-const number1 = decode('a');
-console.log(number1); // 10
-const number2 = decode('1a');
-console.log(number2); // 72
+const number1 = decode('a')
+console.log(number1) // 10
+const number2 = decode('1a')
+console.log(number2) // 72
 ```
 
 #### Custom Usage
+
 ```js
-import { encode, decode } from '@sumor/short-id';
+import { encode, decode } from '@sumor/short-id'
 
-const rule = "0123456789abcdefghigklmnopqrstuvwxyz"
-const shortId1 = encode(10, rule);
-console.log(shortId1); // 'a'
+const rule = '0123456789abcdefghigklmnopqrstuvwxyz'
+const shortId1 = encode(10, rule)
+console.log(shortId1) // 'a'
 const shortId2 = encode(46, rule)
-console.log(shortId2); // '1a'
+console.log(shortId2) // '1a'
 
-const number1 = decode('a', rule);
-console.log(number1); // 10
-const number2 = decode('1a', rule);
-console.log(number2); // 46
-
+const number1 = decode('a', rule)
+console.log(number1) // 10
+const number2 = decode('1a', rule)
+console.log(number2) // 46
 ```
