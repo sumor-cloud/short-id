@@ -1,7 +1,7 @@
 {
   "name": "@sumor/short-id",
   "description": "This is a short-id library for Node.js and the browser. You can easily use it to generate a short id from number.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "repository": "sumor-cloud/short-id",
   "author": "Sumor Cloud Ltd",
